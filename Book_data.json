@@ -1,0 +1,32 @@
+[
+    {
+        "name": "albert",
+        " age": "211",
+        "gender": "male",
+        "class": "economy"
+    },
+    {
+        "name": "kumar",
+        " age": "32",
+        "gender": "male",
+        "class": "economy"
+    },
+    {
+        "name": "Gokul",
+        " age": "21",
+        "gender": "male",
+        "class": "firstClass"
+    },
+    {
+        "name": "karthi",
+        " age": "19",
+        "gender": "male",
+        "class": "business"
+    },
+    {
+        "name": "mohan",
+        " age": "43",
+        "gender": "female",
+        "class": "economy"
+    }
+]

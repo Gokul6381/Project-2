@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madras Flights</title>
+
+    <link rel="icon" href="{{ url_for('static', filename='images/icon.png') }}">
+    <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Protest+Guerrilla&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <nav class="header">
+        <div class="left">
+            <h1>Madras Flights</h1>
+        </div>
+        <div class="right">
+            <h2><a href="http://127.0.0.1:5000/">Home</a></h2>
+            <h2><a href="#about">About</a></h2>
+            <h2><a href="#contact">Contact</a></h2>
+            <h2><a href="http://127.0.0.1:5000/select">Availability</a></h2>
+            <button><a href="http://127.0.0.1:5000/book">Book Now</a></button>
+        </div>
+    </nav>
+    <div class="home">
+        <img src="{{ url_for('static', filename='images/bg-1.jpg') }}" alt="image">
+       <div class="container">
+            <div class="left">
+                <h1>Exclusive flight deals await </h1>
+                <h1>  Happy Flying </h1>
+                <h1> With Us...</h1>
+                <img src="{{ url_for('static', filename='images/home.png') }}" alt="image">
+            </div>
+            <div class="right">
+                <i class="fa-brands fa-instagram"></i><i class="fa-brands fa-square-facebook"></i><i class="fa-brands fa-x-twitter"></i><br>
+                <h1>Follow us 
+                    to Get 20% Off</h1>
+                    <hr>
+                <h1>Book Your Tickets Now</h1>
+                <button><a href="http://127.0.0.1:5000/book">Book Now</a></button>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <h2>About Us</h2><br>
+        <h1>Learn More About Us</h1><br>
+        <div class="box">
+            <div class="left">
+                <img src="{{ url_for('static', filename='images/about-1.jpg') }}" alt="image">
+                <h1>Book Your Tickets <br> +91 8102837465</h1>
+            </div>
+            <div class="right">
+                <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua.</h6>
+                <p><i class="fa-solid fa-circle-check"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p><i class="fa-solid fa-circle-check"></i>Duis aute irure dolor in reprehenderit in voluptate velit.
+                </p>
+                <p><i class="fa-solid fa-circle-check"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                    aute irure dolor in reprehenderit in
+                    voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</p>
+                <h5>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident</h5>
+                <img src="{{ url_for('static', filename='images/about-2.jpg') }}" alt="image">
+            </div>
+        </div>
+        <div class="down">
+
+            <div class="col0">
+                <h2>Enjoy Your Journey</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Duis aute irure dolor in reprehenderit Asperiores dolores sed et. Tenetur
+                    quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.</p>
+                <button><a href="#home">Learn More ></a></button>
+            </div>
+            <div class="col1">
+                <i class="fa-solid fa-clipboard-check"></i>
+                <h3>Corporis voluptates officia eiusmod</h3>
+                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+            </div>
+            <div class="col1">
+                <i class="fa-regular fa-gem"></i>
+                <h3>Ullamco laboris ladore lore pan</h3>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+            </div>
+            <div class="col1">
+                <i class="fa-solid fa-inbox"></i>
+                <h3>Labore consequatur incidid dolore</h3>
+                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+            </div>
+        </div>
+        <div class="down2">
+            <div class="col">
+                <h1>69</h1>
+                <p>Country</p>
+            </div>
+            <div class="col">
+                <h1>521</h1>
+                <p>Flights</p>
+            </div>
+            <div class="col">
+                <h1>24X7</h1>
+                <p>Customer Support</p>
+            </div>
+            <div class="col">
+                <h1>3200+</h1>
+                <p>Workers</p>
+            </div>
+
+        </div>
+    </div>
+    <div id="contact">
+        <h6>Contact</h6>
+        <h1>Need Help? Contact Us</h1>
+        <div class="box1">
+            <div class="col">
+                <div class="left"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="right">
+                    <h3>Address</h3>
+                    <h6>69,Whitefield, Bengaluru, Karnataka 560066,India</h6>
+                </div>
+            </div>
+            <div class="col">
+                <div class="left"><i class="fa-solid fa-phone-volume"></i></div>
+                <div class="right">
+                    <h3>Call Us</h3>
+                    <h6>+91 8967453215</h6>
+                </div>
+            </div>
+            <div class="col">
+                <div class="left"><i class="fa-solid fa-envelope"></i></div>
+                <div class="right">
+                    <h3>Email Us</h3>
+                    <h6>yummyfoods@gmail.com</h6>
+                </div>
+            </div>
+            <div class="col">
+                <div class="left"><i class="fa-solid fa-clock"></i></div>
+                <div class="right">
+                    <h3>Opening Hours</h3>
+                    <h6>Sun-Sat: 11AM - 11PM;</h6>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="box2">
+            <form action="post">
+                <input type="text" id="con-name" placeholder="Your Name">
+                <input type="email" id="con-email" placeholder="Your Email">
+                <input type="text" id="con-subject" placeholder="Subject">
+                <input type="text" id="con-message" placeholder="Message">
+                <button>Send</button>
+            </form>
+        </div>
+        <div class="box3">
+            <div class="top">
+                <div class="col">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h3>Address</h3>
+                    <h6>69,Whitefield,Chennai 600 0028,India</h6>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <h3>Call Us</h3>
+                    <h6>+91 8967453215</h6>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-clock"></i>
+                    <h3>Support Hours</h3>
+                    <h6>24X7</h6>
+                </div>
+                <div class="col">
+                    <a href="https://www.instagram.com/am_gokul_alive?igsh=NjdudnRsNXBqcWlv" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <h3>Follow Us</h3>
+                </div>
+            </div>
+            <div class="bottom">    
+            <footer>
+                <p>&copy; 2024 M. All rights reserved.</p>
+                <p>Website designed by Gokul C.</p>
+            </footer></div>
+        </div>
+    </div>
+
+       <script src="{{url_for('static',filename='main.js')}} " type="text/javascript"></script>
+  
+</body>
+</html>
