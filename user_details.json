@@ -1,0 +1,34 @@
+[
+    {
+        "name": "Gokul",
+        "phone": "6381043168",
+        "email": "iamgokulff004@gmail.com",
+        "user": "gokul_c",
+        "password": "123456",
+        "reg_date": "2024-10-12 11:28:50.309508"
+    },
+    {
+        "name": "sanjay",
+        "phone": "9876543209",
+        "email": "sanjaydharsan2003@gmail.com",
+        "user": "sanjay_d",
+        "password": "0987",
+        "reg_date": "2024-10-16 12:30:49.093196"
+    },
+    {
+        "name": "Kumar",
+        "phone": "9690464000",
+        "email": "kk_kumar99@gmail.com",
+        "user": "Kokki_kumar",
+        "password": "1212",
+        "reg_date": "2024-10-18 19:10:18.131647"
+    },
+    {
+        "name": "mohan",
+        "phone": "1234567890",
+        "email": "mohan@gmail.com",
+        "user": "made_mohan",
+        "password": "2222",
+        "reg_date": "2024-10-18 21:54:13.267015"
+    }
+]

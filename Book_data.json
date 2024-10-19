@@ -1,15 +1,70 @@
 [
     {
-        "name": "albert",
-        " age": "211",
+        "trip": "oneWay",
+        "origin": "Chennai",
+        "destination": "Goa",
+        "departure": "2024-10-08",
+        "return": "2024-10-26"
+    },
+    {
+        "name": "Sarathi",
+        " age": "20",
         "gender": "male",
+        "class": "firstClass"
+    },
+    {
+        "trip": null,
+        "origin": "",
+        "destination": "",
+        "departure": "",
+        "return": ""
+    },
+    {
+        "name": "",
+        " age": "",
+        "gender": null,
         "class": "economy"
     },
     {
-        "name": "kumar",
-        " age": "32",
-        "gender": "male",
+        "trip": null,
+        "origin": "",
+        "destination": "",
+        "departure": "",
+        "return": ""
+    },
+    {
+        "name": "",
+        " age": "",
+        "gender": null,
         "class": "economy"
+    },
+    {
+        "trip": null,
+        "origin": "",
+        "destination": "",
+        "departure": "",
+        "return": ""
+    },
+    {
+        "trip": null,
+        "origin": "",
+        "destination": "",
+        "departure": "",
+        "return": ""
+    },
+    {
+        "name": "",
+        " age": "",
+        "gender": null,
+        "class": "economy"
+    },
+    {
+        "user": "gokul_c",
+        "trip": "oneWay",
+        "origin": "chennai",
+        "destination": "mumbai",
+        "departure": "",
+        "return": ""
     },
     {
         "name": "Gokul",
@@ -18,15 +73,102 @@
         "class": "firstClass"
     },
     {
-        "name": "karthi",
-        " age": "19",
-        "gender": "male",
-        "class": "business"
+        "name": "sanjay",
+        " age": "21",
+        "gender": "female",
+        "class": "bussiness"
     },
     {
-        "name": "mohan",
-        " age": "43",
-        "gender": "female",
+        "user": "gokul_c",
+        "trip": null,
+        "origin": "",
+        "destination": "",
+        "departure": "",
+        "return": ""
+    },
+    {
+        "user": "gokul_c",
+        "name": "Gokul",
+        "age": "21",
+        "gender": "male",
         "class": "economy"
+    },
+    {
+        "flight_id": "AI4072",
+        "user": "gokul_c",
+        "name": "Gokul",
+        "age": "20",
+        "gender": "male",
+        "class": "firstClass"
+    },
+    {
+        "user": "gokul_c",
+        "trip": "oneWay",
+        "origin": "chennai",
+        "destination": "mumbai",
+        "departure": "2024-10-13",
+        "return": "2024-10-13"
+    },
+    {
+        "flight_id": "AI4072",
+        "user": "gokul_c",
+        "name": "sanjay",
+        "age": "11",
+        "gender": "male",
+        "class": "economy"
+    },
+    {
+        "flight_id": "AI2904",
+        "user": "gokul_c",
+        "name": "Gokul",
+        "age": "21",
+        "gender": "male",
+        "class": "firstClass",
+        "book_date": "2024-10-12 12:04:28.512339"
+    },
+    {
+        "flight_id": "AI2904",
+        "user": "gokul_c",
+        "name": "kumar",
+        "age": "21",
+        "gender": "male",
+        "class": "economy",
+        "book_date": "2024-10-16 12:20:51.122580"
+    },
+    {
+        "flight_id": "AI6282",
+        "user": "sanjay_d",
+        "name": "Gokul",
+        "age": "20",
+        "gender": "male",
+        "class": "firstClass",
+        "book_date": "2024-10-16 12:32:17.398334"
+    },
+    {
+        "flight_id": "AI4328",
+        "user": "gokul_c",
+        "name": "mohan",
+        "age": "23",
+        "gender": "male",
+        "class": "bussiness",
+        "book_date": "2024-10-17 11:20:08.097179"
+    },
+    {
+        "flight_id": "AI1749",
+        "user": "gokul_c",
+        "name": "sanjay",
+        "age": "21",
+        "gender": "male",
+        "class": "economy",
+        "book_date": "2024-10-18 21:55:34.827292"
+    },
+    {
+        "flight_id": "AI8822",
+        "user": "gokul_c",
+        "name": "Gokul",
+        "age": "20",
+        "gender": "male",
+        "class": "firstClass",
+        "book_date": "2024-10-19 16:08:32.008127"
     }
 ]

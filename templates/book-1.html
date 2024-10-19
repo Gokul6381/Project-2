@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madras Flights</title>
+
+    <link rel="icon" href="{{ url_for('static', filename='images/icon.png') }}">
+    <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Protest+Strike&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+    <nev class="header">
+        <div class="nev-left">
+            <h1>Madras Flights</h1>
+        </div>        
+        <div class="nev-right">
+          <h1 onclick="openMenu()"> <i class="fa-solid fa-bars"></i></h1>
+        </div>
+        <div class="menu">
+            <h1 onclick="closeMenu()"><i class="fa-regular fa-circle-xmark"></i></h1>
+            <h2><a href="/">Home</a></h2>
+            <h2><a href="/available">Available</a></h2>
+            <h2><a href="/login">Login</a></h2>
+        </div>
+    </nev>
+
+
+   <div class="book-1">
+        <div class="cont-1">
+            <h1>Flight Plans</h1>
+            <form method="post">
+                <table>
+                    <tr>
+                        <td><h2>Trip Mode</h2></td>
+                        <td><input type="radio" name="trip" value="oneWay"><label>One Way</label><input type="radio" name="trip" value="return"><label>Return</label></td>
+                    </tr>
+                    <tr>
+                        <td><h2>Origin</h2></td>
+                        <td><input type="text" name="origin"></td>
+                    </tr>
+                    <tr>
+                        <td><h2>Destination</h2></td>
+                        <td><input type="text" name="destination"></td>
+                    </tr>
+                    <tr>
+                        <td><h2>Departure</h2></td>
+                        <td><input type="date" name="departure"></td>
+                    </tr>
+                    <tr id="return">
+                        <td><h2>Return</h2></td>
+                        <td><input type="date" name="return"></td>
+                    </tr>
+                </table>
+                <button type="submit">Next</button>
+            </form>
+        </div>
+        
+        <footer>
+                <h2>Contact Us :</h2>
+                <div class="center">
+                    <h1><i class="fa-brands fa-whatsapp"></i></h1>
+                    <h1><i class="fa-brands fa-instagram"></i></h1>
+                    <h1><i class="fa-brands fa-facebook"></i></h1>
+                </div>
+                <h3>Call On: +91 7865432897</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, repellendus.</p>
+            </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+<script src="{{url_for('static',filename='main.js')}} " type="text/javascript"></script>
+</body>
+</html>
