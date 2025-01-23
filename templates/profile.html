@@ -1,240 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Madras Flights</title>
+{% extends "Main.html" %} {% block content %}
 
-    <link rel="icon" href="{{ url_for('static', filename='images/icon.png') }}">
-    <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
+<div class="profile">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Protest+Strike&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-
-
-    <nev class="header">
-        <div class="nev-left">
-            <h1>Madras Flights</h1>
-        </div>        
-        <div class="nev-right">
-          <h1 onclick="openMenu()"> <i class="fa-solid fa-bars"></i></h1>
-        </div>
-        <div class="menu">
-            <h1 onclick="closeMenu()"><i class="fa-regular fa-circle-xmark"></i></h1>
-            <h2><a href="/">Home</a></h2>
-            <h2><a href="/available">Book</a></h2>
-            <h2><a href="/login">Login</a></h2>
-        </div>
-    </nev>
-
-
-   <div class="profile">
-        <div class="cont-1">
-            <div class="detail">
-            <h1>Profile</h1>
-                <table>
-                    <tr>
-                        <td><h2>Name</h2></td>
-                        <td><h2>{{profile[2]}}</h2></td>
-                    </tr>
-                    <tr>
-                        <td><h2>Phone</h2></td>
-                        <td><h2>{{profile[3]}}</h2></td>
-                    </tr>
-                    <tr>
-                        <td><h2>Email</h2></td>
-                        <td><h2 id="email">{{profile[4]}}</h2></td>
-                    </tr>
-                    <tr>
-                        <td><h2>User Id</h2></td>
-                        <td><h2>{{profile[0]}}</h2></td>
-                    </tr>
-                   
-                </table>
-                <button><a href="/login">Logout</a></button>
-                <button onclick="open_edit()">Edit</button>
-            </div>
-            <div class="edit">
-                <h1>Profile</h1>
-                <form method="post">
-                <table>
-                    <tr>
-                        <td><h2>Name</h2></td>
-                        <td><input type="text" name="name" required></td>
-                    </tr>
-                    <tr>
-                        <td><h2>Phone</h2></td>
-                        <td><input type="number" name="phone" required></td>
-                    </tr>
-                    <tr>
-                        <td><h2>Email</h2></td>
-                        <td><input type="email" name="email" required></td>
-                    </tr>
-                    <tr>
-                        <td><h2>Password</h2></td>
-                        <td><input type="password" name="userPass" required></td>
-                    </tr>
-                   
-                </table>
-                
-                <button type="submit">Save</a></button>
-                </form>
-                <button onclick="close_edit()">Cancel</button>
-                
-            </div>
-        </div>
-        {% if history %}
-        <div class="cont-2">
-            <div class="history">
-                <h1>My Bookings</h1>
-
-                <table>
-                    <tr>
-                        <td>Book Id</td>
-                        <td>Name</td>
-                        <td>Flight</td>
-                        <td>Departure</td>
-                    </tr>
-
-                    {% for i in history %}
-                    <tr>
-                        <td>{{i[0]}}</td>
-                        <td>{{i[1]}}</td>
-                        <td>{{i[5]}}</td>
-                        <td>{{i[9]}}</td>
-                    </tr>
-                    {% endfor %}
-                </table>
-                <button onclick="show_detail()" value="{{i}}" id="view">View</button>
-
-            </div>
-
-            <div class="pop">
-                <h1>My Bookings</h1>
-                {% for i in history %}
-                <div class="box">
-                    <table>
-                        <tr>
-                            <td>Book Id</td>
-                            <td>Name</td>
-                            <td>Flight</td>
-                            <td>Departure</td>
-                        </tr>
-                        <tr>
-                            <td>{{history[0][0]}}</td>
-                            <td>{{history[0][1]}}</td>
-                            <td>{{history[0][5]}}</td>
-                            <td>{{history[0][9]}}</td>
-                        </tr>
-                    </table>
-                    <table>
-                        <tr>
-                            <td>Age</td>
-                            <td>{{i[2]}}</td>
-                        </tr>
-                        <tr>
-                            <td>Gender</td>
-                            <td>{{i[3]}}</td>
-
-                        </tr>
-                        <tr>
-                            <td>Class</td>
-                            <td>{{i[4]}}</td>
-                        </tr>
-                        <tr>
-                            <td>Air Lines</td>
-                            <td>{{i[6]}}</td>
-                        </tr>
-                        <tr>
-                            <td>Flight Id</td>
-                            <td>{{i[5]}}</td>
-                        </tr>
-                        <tr>
-                            <td>Origin</td>
-                            <td>{{i[7]}}</td>
-                        </tr>
-                        <tr>
-                            <td>Destination</td>
-                            <td>{{i[8]}}</td>
-                        </tr>
-                        
-                    </table>
-                </div>
-                {% endfor %}
-                <button onclick="close_detail()">Close</button>
-            </div>   
-        </div>
-
-        <footer>
-            <h2>Contact Us :</h2>
-            <div class="center">
-                <h1><i class="fa-brands fa-whatsapp"></i></h1>
-                <h1><i class="fa-brands fa-instagram"></i></h1>
-                <h1><i class="fa-brands fa-facebook"></i></h1>
-            </div>
-            <h3>Call On: +91 7865432897</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, repellendus.</p>
-        </footer>
-
-        {% else %}
-<div class="index">
-        <div class="cont-2">
-            <div class="slide">
-
-                <div class="slide-1">
-                    <img src="{{ url_for('static', filename='images/slide-1.jpg') }}" alt="image">
-                </div>
-                <div class="slide-2">
-                    <img src="{{ url_for('static', filename='images/slide-2.jpg') }}" alt="image">
-                </div>
-                <div class="slide-3">
-                    <img src="{{ url_for('static', filename='images/slide-3.jpg') }}" alt="image">
-                </div>
-                <div class="slide-4">
-                    <img src="{{ url_for('static', filename='images/slide-4.jpg') }}" alt="image">
-                </div>
-
-            </div>
-            <div class="down">
-                <button id="less" value="0" onclick="slide()"><</button>
-                <button><a href="/available">Book Now</a></button>
-                <button id="less" value="0" onclick="slide()">></button>
-            </div>
-            <div class="down2">
-                <h2>Get Exclusive Offers And Gifts</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, distinctio consectetur nemo molestiae molestias suscipit</p>
-            </div>
-        </div>
-        <footer>
-            <h2>Contact Us :</h2>
-            <div class="center">
-                <h1><i class="fa-brands fa-whatsapp"></i></h1>
-                <h1><i class="fa-brands fa-instagram"></i></h1>
-                <h1><i class="fa-brands fa-facebook"></i></h1>
-            </div>
-            <h3>Call On: +91 7865432897</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, repellendus.</p>
-        </footer>
-</div>
+        <div class="cont">
+          
         
-        {% endif %}
+              <a type="button" href="/profile">
+               Profile
+              </a>
+              <a type="button" onclick="history()">
+                History
+               </a>
+               <a type="button" onclick="update()">
+                Update
+               </a>
+            
+  
+            <div class="data">
+              <label>Name</label>
+              <h2>{{profile[2]}}</h2>
+            </div>
+            <div class="data">
+              <label>Phone</label>
+              <h2>{{profile[3]}}</h2>
+            </div>
+            <div class="data">
+              <label>Email</label>
+              <h2>{{profile[4]}}</h2>
+            </div>
+            
+            <a type="button" href="/login" id="Logout">Logout</a>
+  
+          </div>
+        </div>
 
+</div>
+<div class="history">
+
+  <div class="cont">
     
-    </div> 
+  
+        <a type="button" href="/profile">
+         Profile
+        </a>
+        <a type="button" onclick="history()">
+         History
+        </a>
+        <a type="button" onclick="update()">
+          Update
+         </a>
+      
+      <div class="box">
+        {% for h in history %}
+      <div class="data">
+        <h2>Booking Id: {{h[0]}}</h2>
+        <h2>Name: {{h[1]}}</h2>
+        <h2>Age: {{h[2]}}</h2>
+        <h2>Gender:{{h[3]}}</h2>
+        <h2>Air Line: {{h[6]}}</h2>
+        <h2>Flight: {{h[7]}} To {{h[8]}}</h2>
+        <h2>Depature: {{h[9]}}</h2>
+      </div>
+      {% endfor %}
+    </div>
 
+    </div>
+</div>
 
+<div class="update">
 
+  <div class="cont">
+    
+  
+        <a type="button" href="/profile">
+         Profile
+        </a>
+        <a type="button" onclick="history()">
+          History
+         </a>
+         <a type="button" onclick="update()">
+          Update
+         </a>
+      
+         <form method="post">
+        <input
+          type="text"
+          name="name"
+          placeholder="Enter Your Name"
+          required
+        ></input><br>
+        <input
+          type="email"
+          name="email"
+          placeholder="Enter Email Id"
+          required
+        ></input><br>
+        <input
+        type="tel"
+        name="phone"
+        placeholder="Enter Phone Number"
+        pattern="[0-9]{10}"
+        required
+      ></input><br>
+      <button type="submit">Update</button>
+    </form>
+    </div>
+  </div>
 
+</div>
+   
 
-
-
-
-
-<script src="{{url_for('static',filename='main.js')}} " type="text/javascript"></script>
-</body>
-</html>
+ 
+{% endblock %}

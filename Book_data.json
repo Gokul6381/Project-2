@@ -170,5 +170,23 @@
         "gender": "male",
         "class": "firstClass",
         "book_date": "2024-10-19 16:08:32.008127"
+    },
+    {
+        "flight_id": "AI1523",
+        "user": "gg47",
+        "name": "gokul",
+        "age": "21",
+        "gender": "male",
+        "class": "bussiness",
+        "book_date": "2025-01-23 15:22:49.371714"
+    },
+    {
+        "flight_id": "AI1073",
+        "user": "gg47",
+        "name": "gokul",
+        "age": "21",
+        "gender": "male",
+        "class": "economy",
+        "book_date": "2025-01-23 15:24:32.885510"
     }
 ]

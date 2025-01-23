@@ -1,0 +1,242 @@
+{% extends "Main.html" %} {% block content %}
+<div class="home">
+  <div class="content-1">
+    <div class="box">
+      <div class="top">
+        <button>One-Way</button>
+        <button>Round-Trip</button>
+        <button>Multi-City</button>
+        <h3>Search Your Trip Plan</h3>
+      </div>
+      <div class="mid">
+        <input type="text" name="from" id="from" />
+        <button><i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+        <input type="text" name="to" id="to" />
+        <input type="date" name="depature" id="depature" />
+      </div>
+      <div class="bottom">
+        <select name="class" id="class" style="width: fit-content">
+          <option value="Economy">Economy</option>
+          <option value="Premium Economy">Premium Economy</option>
+          <option value="Business class">Business class</option>
+          <option value="First class">First class</option>
+        </select>
+        <select name="person" id="person" style="width: fit-content">
+          <option value="Defence Force">Defence Force</option>
+          <option value="Senior Citizens">Senior Citizens</option>
+          <option value="Doctors Nurses">Doctors Nurses</option>
+          <option value="Students">Students</option>
+        </select>
+
+        <button>Search</button>
+      </div>
+    </div>
+  </div>
+  <div class="content-2">
+    <div class="box-1">
+      <div class="cards">
+        <div class="card">
+          <img
+            src="{{ url_for('static', filename='images/ads-1.png') }}"
+            alt="image"
+          />
+        </div>
+        <div class="card">
+          <img
+            src="{{ url_for('static', filename='images/ads-2.jpg') }}"
+            alt="image"
+          />
+        </div>
+        <div class="card">
+          <img
+            src="{{ url_for('static', filename='images/ads-3.jpg') }}"
+            alt="image"
+          />
+        </div>
+        <div class="card">
+          <img
+            src="{{ url_for('static', filename='images/ads-4.jpg') }}"
+            alt="image"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="box-2">
+      <div class="info">
+        <img
+          src="{{ url_for('static', filename='images/info-1.png') }}"
+          alt="image"
+        />
+        <h5>Top travel app in India</h5>
+        <p>Highly rated in App Store & Google Play</p>
+      </div>
+      <div class="info">
+        <img
+          src="{{ url_for('static', filename='images/info-2.png') }}"
+          alt="image"
+        />
+        <h5>Shop with confidence</h5>
+        <p>No hidden fees, taxes or other nasty surprises</p>
+      </div>
+      <div class="info">
+        <img
+          src="{{ url_for('static', filename='images/info-3.png') }}"
+          alt="image"
+        />
+        <h5>Pay the way you want</h5>
+        <p>See only sellers who support your preferred methods</p>
+      </div>
+      <div class="info">
+        <img
+          src="{{ url_for('static', filename='images/info-4.png') }}"
+          alt="image"
+        />
+        <h5>Instant booking</h5>
+        <p>For selected sellers, book with just a couple of clicks</p>
+      </div>
+    </div>
+    <div class="box-3">
+      <h2>Popular Airlines in India</h2>
+      <img
+        src="{{ url_for('static', filename='images/brand-1.webp') }}"
+        alt="image"
+      />
+      <img
+        src="{{ url_for('static', filename='images/brand-2.webp') }}"
+        alt="image"
+      />
+      <img
+        src="{{ url_for('static', filename='images/brand-3.webp') }}"
+        alt="image"
+      />
+      <img
+        src="{{ url_for('static', filename='images/brand-4.webp') }}"
+        alt="image"
+      />
+      <img
+        src="{{ url_for('static', filename='images/brand-5.webp') }}"
+        alt="image"
+      />
+      <img
+        src="{{ url_for('static', filename='images/brand-6.webp') }}"
+        alt="image"
+      />
+      <img
+        src="{{ url_for('static', filename='images/brand-3.webp') }}"
+        alt="image"
+      />
+      <img
+        src="{{ url_for('static', filename='images/brand-7.webp') }}"
+        alt="image"
+      />
+    </div>
+    <div class="box-4">
+      <h2>Our Travel Partners</h2>
+      <img
+        src="{{ url_for('static', filename='images/brand-1.webp') }}"
+        alt="image"
+      />
+      <img
+        src="{{ url_for('static', filename='images/brand-2.webp') }}"
+        alt="image"
+      />
+      <img
+        src="{{ url_for('static', filename='images/brand-3.webp') }}"
+        alt="image"
+      />
+      <img
+        src="{{ url_for('static', filename='images/brand-4.webp') }}"
+        alt="image"
+      />
+      <img
+        src="{{ url_for('static', filename='images/brand-5.webp') }}"
+        alt="image"
+      />
+      <img
+        src="{{ url_for('static', filename='images/brand-6.webp') }}"
+        alt="image"
+      />
+      <img
+        src="{{ url_for('static', filename='images/brand-3.webp') }}"
+        alt="image"
+      />
+      <img
+        src="{{ url_for('static', filename='images/brand-7.webp') }}"
+        alt="image"
+      />
+    </div>
+    <div class="box-5">
+        <div>
+        <table>
+            <tr>
+                <h5>Flights To Top Cities from India</h5>
+            </tr>
+            <tr>
+                <td><p>Flights to New Delhi</p></td>
+                <td><p>Flights to Mumbai</p></td>
+                <td><p>Flights to Bangalore</p></td>
+                <td><p>Flights to Kolkata</p></td>
+            </tr>
+            <tr>
+                <td><p>Flights to Goa</p></td>
+                <td><p>Flights to Heyderabad</p></td>
+                <td><p>Flights to Srinagar</p></td>
+                <td><p>Flights to Ahamedabad</p></td>
+            </tr>
+            <tr>
+                <td><p>Flights to Chennai</p></td>
+                <td><p>Flights to Koochi</p></td>
+                <td><p>Flights to Pune</p></td>
+                <td><p>Flights to Karur</p></td>
+            </tr>
+        </table></div>
+        <div style="margin-top: 20px;">
+        <table>
+
+                <h5>Top International Destinations</h5>
+            <tr>
+                <td><p>Flights to Kuwait</p></td>
+                <td><p>Flights to Dubai</p></td>
+                <td><p>Flights to Riyadh</p></td>
+                <td><p>Flights to Jeddah</p></td>
+            </tr>
+            <tr>
+                <td><p>Flights to Dammam</p></td>
+                <td><p>Flights to Abu Dubai</p></td>
+                <td><p>Flights to Doha</p></td>
+                <td><p>Flights to Bangkok</p></td>
+            </tr>
+            <tr>
+                <td><p>Flights to Muscat</p></td>
+                <td><p>Flights to Sharjah</p></td>
+                <td><p></p></td>
+                <td><p></p></td>
+            </tr>
+        </table></div>
+        <div style="margin-top: 20px;">
+            <table>
+    
+                    <h5>Flights To Top Countries</h5>
+                <tr>
+                    <td><p>Flights to Saudi Arabia</p></td>
+                    <td><p>Flights to United Arab Emirates</p></td>
+                    <td><p>Flights to Kuwait</p></td>
+                    <td><p>Flights to Thailand</p></td>
+                </tr>
+                <tr>
+                    <td><p>Flights to Qatar</p></td>
+                    <td><p>Flights to Abu Oman</p></td>
+                    <td><p>Flights to Barain</p></td>
+                    <td><p>Flights to United States</p></td>
+                </tr>
+                <tr>
+                    <td><p>Flights to Malaysia</p></td>
+                    <td><p>Flights to Singapore</p></td>
+                    <td><p></p></td>
+                    <td><p></p></td>
+                </tr>
+            </table></div>
+    </div>
+  </div>
+</div>
+{% endblock %}

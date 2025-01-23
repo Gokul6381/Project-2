@@ -1,0 +1,911 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Geist Mono", serif;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    font-family: "Ysabeau SC", serif;
+
+}
+
+.header {
+    width: 100%;
+    min-width: 400px;
+    height: 60px;
+    background-color: darkblue;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: fixed;
+    top: 0;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.header .left {
+    width: 40%;
+    min-width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.header .left h1 {
+    font-family: "Ysabeau SC", serif;
+    color: white;
+    text-align: center;
+
+}
+
+.header .right {
+    width: fit-content;
+    text-align: center;
+    display: flex;
+}
+
+.header .right h3 {
+    width: 150px;
+    font-family: "Ysabeau SC", serif;
+    color: white;
+    font-size: 26px;
+    padding: 13px;
+}
+
+.header .right select {
+    width: 150px;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    font-size: 26px;
+    font-family: "Ysabeau SC", serif;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.header .right option {
+    font-family: "Ysabeau SC", serif;
+}
+.header .bar{
+    display: none;
+    font-size: 30px;
+    padding: 10px;
+    margin-right: 20px ;
+    color: white;
+}
+
+.header .menu{
+    width: 40%;
+    height: 400px;
+    color:white;
+    background-color: darkblue;
+    display: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.header .menu h1{
+    margin: 10px;
+}
+.header .menu h3{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer{
+    width: 100%;
+    min-width: 400px;
+    height: fit-content;
+    background-color: darkblue;
+    text-align: center;
+    padding: 30px;
+    color: white;
+}
+
+.footer i{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.home {
+    width: 100%;
+    height: fit-content;
+    margin-top: 60px;
+}
+
+.home .content-1 {
+    width: 100%;
+    min-width: 400px;
+    height: 550px;
+    background-image: url("./images/bg-1.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.home .content-1 .box {
+    width: 80%;
+    min-width: 300px;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.858);
+    margin: 10%;
+    margin-top: 100px;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.home .content-1 .box .top {
+    width: 90%;
+    height: 60px;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+.home .content-1 .box .top button {
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    color: darkblue;
+    font-family: "Ysabeau SC", serif;
+    font-weight:bold;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+
+.home .content-1 .box .top h3 {
+    padding: 10px;
+    color: darkblue;
+}
+.home .content-1 .box .mid{
+    width: 90%;
+    height: fit-content;
+    display: flex ;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    justify-content: space-evenly;
+    background-color: rgba(0, 0, 139, 0.548);
+    border-radius: 10px;
+}
+.home .content-1 .box .mid input{
+    width: 35%;
+    height: 50px;
+    border: 2px dashed darkblue;
+    border-radius: 10px;
+    margin: 10px;
+}
+.home .content-1 .box .mid button{
+    width: 5%;
+    min-width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid darkblue;
+    margin-top: 20px;
+    background-color: darkblue;
+    color: white;
+}
+
+.home .content-1 .box .mid input:hover{
+    border: solid darkblue;
+}
+
+
+.home .content-1 .box .bottom{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home .content-1 .box .bottom select {
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    background-color: darkblue;
+    color: white;
+    font-size: 26px;
+    font-family: "Ysabeau SC", serif;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.home .content-1 .box .bottom option {
+    font-family: "Ysabeau SC", serif;
+}
+
+.home .content-1 .box .bottom button{
+    width: 200px;
+    height: 55px;
+    background-color: darkblue;
+    color: white;
+    font-family: "Ysabeau SC", serif;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.content-2{
+    width: 100%;
+    min-width: 400px;
+    height: fit-content;    
+}
+
+.content-2 .box-1{
+    width: 100%;
+    height: 350px;
+    background-color: rgba(0, 0, 139, 0.704);
+}
+
+.content-2 .cards{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 20px;
+    background-color: none;
+}
+
+.cards::-webkit-scrollbar{
+    display: none;
+}
+
+.content-2 .cards .card{
+    flex : 0 0 350px;
+    height: 200px;
+    margin: auto;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 2px solid darkblue;
+}
+.content-2 .cards .card:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.content-2 .cards .card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+
+}
+
+.home .content-2 .box-2{
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
+.home .content-2 .info{
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.home .content-2 .info img{
+    width: 100px;
+    height: 100px;
+}
+
+.home .content-2 .box-3{
+    width: 90%;
+    height: fit-content;
+    background-color: rgba(0, 0, 139, 0.704);
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+.home .content-2 .box-3 h2{
+    font-family: "Ysabeau SC", serif;
+    color: white;
+}
+
+.home .content-2 .box-3 img{
+    width: 100px;
+    height: 50px;
+    margin: 20px;
+    margin-top: 30px;
+}
+
+.home .content-2 .box-4{
+    width: 90%;
+    height: fit-content;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 3px solid darkblue;
+
+}
+.home .content-2 .box-4 h2{
+    font-family: "Ysabeau SC", serif;
+    color: darkblue;
+}
+
+.home .content-2 .box-4 img{
+    width: 100px;
+    height: 50px;
+    margin: 20px;
+    margin-top: 30px;
+}
+
+.home .content-2 .box-5{
+    width: 90%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.home .content-2 .box-5 table{
+    width: 100%;
+    height: fit-content;
+    text-align: start;
+    margin-top: 30px;
+}
+.home .content-2 .box-5 table td{
+    width: 25%;
+    height: 40px;
+}
+
+.home .content-2 .box-5 p,h5{
+    margin: 0;
+}
+
+
+
+.register{
+    width: 100%;
+    height: fit-content;
+    min-width: 400px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.register .cont-1{
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    margin-bottom: 100px;
+    border: 2px solid darkblue;
+    border-radius: 20px;
+    background-color: lightcyan;
+}
+
+.register .cont-1 h1{
+    color: darkblue;
+    font-family: "Ysabeau SC", serif;
+    margin-top: 20px;
+
+}
+
+.register .cont-1 input{
+    width: 70%;
+    height: 40px;
+    margin: 30px;
+    border: 2px solid darkblue;
+    border-radius: 8px;
+}
+
+.register .cont-1 button{
+    width: 100px;
+    height: 40px;
+    border: 2px solid darkblue;
+    color: darkblue;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    font-family: "Ysabeau SC", serif;
+    font-size: 20px;
+}
+
+.register .cont-1 button:hover{
+    color: white;
+    background-color: darkblue;
+}
+
+.login{
+    width: 100%;
+    height: fit-content;
+    min-width: 400px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.login .cont-1{
+    width: 50%;
+    height: fit-content;
+    margin: auto;
+    margin-bottom: 100px;
+    border: 2px solid darkblue;
+    border-radius: 20px;
+    background-color: lightcyan;
+}
+
+.login .cont-1 h1{
+    color: darkblue;
+    font-family: "Ysabeau SC", serif;
+    margin-top: 20px;
+
+}
+
+.login .cont-1 input{
+    width: 70%;
+    height: 40px;
+    margin: 30px;
+    border: 2px solid darkblue;
+    border-radius: 8px;
+}
+
+.login .cont-1 button{
+    width: 70%;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-family: "Ysabeau SC", serif;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 3px;
+    background-color: darkblue;
+}
+
+
+.login .cont-1 a{
+    width: 70%;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    font-family: "Ysabeau SC", serif;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 3px;
+    background-color: darkblue;
+}
+
+
+
+.profile{
+    margin-top: 60px;
+    width: 100%;
+    min-width: 400px;
+    height: fit-content;
+    font-family: "Ysabeau SC", serif;
+    background-color: lightcyan;
+}
+
+
+
+.cont{
+    width: 100%;
+    height: fit-content;
+    padding-bottom: 100px; 
+    text-align: center;  
+}
+
+
+
+.cont a{
+    width: 100px;
+    height: 40px;
+    margin: 30px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: none;
+    font-family: "Ysabeau SC", serif;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+    color: darkblue;
+}
+
+.cont h2{
+    font-size: 25px;
+    cursor: pointer;
+    border: 2px solid darkblue;
+
+}
+
+
+.profile .cont .data{
+    text-align: start;
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.cont #logout a{
+  
+    border: 2px solid red;
+    color: red;
+}
+.cont #logout a:hover{
+    background-color: red;
+    color: white;
+}
+
+
+.cont .data label{
+    width: 100px;
+    height: 40px;
+    font-family: "Ysabeau SC", serif;
+    font-size: 24px;
+    color: darkblue;
+}
+.profile .cont .data h2{
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    border: 2px solid darkblue;
+    padding: 5px;
+}
+
+.cont .data input{
+    width: 100%;
+    height: 40px;
+    margin: 10px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+.cont button{
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    margin-left: 40%;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+    color: darkblue;
+    margin-bottom: 100px;
+}
+.cont button:hover{
+    background-color: darkblue;
+    color: white;
+}
+
+.history{
+    display: none;
+    margin-top: 60px;
+    width: 100%;
+    min-width: 400px;
+    height: fit-content;
+    font-family: "Ysabeau SC", serif;
+    background-color: lightcyan;
+}
+
+.box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box .data{
+    text-align: start;
+    min-width: 300px;
+    flex-basis: 40%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+}
+
+.box .data h2{
+    border: none;
+}
+
+.update{
+    display: none;
+    margin-top: 60px;
+    width: 100%;
+    min-width: 400px;
+    height: fit-content;
+    font-family: "Ysabeau SC", serif;
+    background-color: lightcyan;
+}
+
+.update input{
+    width: 90%;
+    max-width: 800px;
+    height: 40px;
+    margin: 30px;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+}
+.update button{
+    margin: auto;
+}
+.available{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-top: 100px;
+
+}
+.available .search{
+    width: 90%;
+    min-width: 400px;
+    height: 150px;
+    margin: auto;
+    text-align: center;
+    background-color: lightcyan;
+    border: 2px black solid;
+    border-radius: 10px;
+}
+.available .search h1{
+    font-family: "Ysabeau SC", serif;
+    color: darkblue;
+    margin: 20px;
+}
+.available .search input{
+    width: 70%;
+    height: 40px;
+    border: 2px solid darkblue;
+}
+.available .search button{
+    width: 20%;
+    height: 40px;
+    background-color: darkblue;
+    font-family: "Ysabeau SC", serif;
+    color: white;
+    border: none;
+}
+
+.available .list{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.available .list table{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.available .list td{
+    height: 30px;
+    border: 1px black solid;
+    background-color: white;
+    background-color: lightcyan;
+    padding: 3px;
+}
+.available .list h3{
+    color: darkblue;
+    font-family: "Ysabeau SC", serif;
+
+}
+
+.available .list button{
+    border: none;
+    border-radius: 3px;
+    color: white;
+    background-color: darkblue;
+    padding: 3px;
+
+}
+
+.passanger{
+    width: 70%;
+    min-width: 400px;
+    height: fit-content;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+    background-color: lightcyan;
+}
+
+.passanger h1{
+    font-family: "Ysabeau SC", serif;
+
+    color: darkblue;
+}
+.passanger .data{
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.passanger .data h2{
+    text-align: start;
+    color: darkblue;
+    font-family: "Ysabeau SC", serif;
+
+}
+.passanger .data input{
+    width: 100%;
+    height: 40px;
+    border: 2px solid darkblue;
+}
+.passanger .data .gender{
+    width: 25px;
+    height: 25px;
+}
+.passanger .data label{
+    font-size: 20px;
+    margin: 20px;
+    color: darkblue;
+}
+.passanger .data select{
+    width: 100%;
+    height: 40px;
+    border: 2px solid darkblue;
+}
+.passanger button{
+    width: 100px;
+    height: 40px;
+    border: 2px solid darkblue;
+    color: darkblue;
+    border-radius: 5px;
+    font-family: "Ysabeau SC", serif;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.success{
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 70%;
+    min-width: 400px;
+    height: fit-content;
+    text-align: center;
+    border: 2px solid darkblue;
+    border-radius: 10px;
+}
+
+.success h1{
+    color: green;
+    font-size: 60px;
+    margin: 30px;
+}
+.success a{
+    width: 100px;
+    height: 40px;
+    margin: 30px;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+    color: none;
+    font-family: "Ysabeau SC", serif;
+    border: 2px solid darkblue;
+    border-radius: 5px;
+    color: darkblue;
+}
+
+.error{
+    width: 70%;
+    height: 1000px;
+    margin-left: 15%;
+    background-color:lightcyan;
+    color: darkblue;
+}
+
+.error .cont-1{
+    position: absolute;
+    width: 70%;
+    height: fit-content;
+    top: 25%;
+    background-color: white;
+    text-align: center;
+}
+.error .cont-1 h1{
+    font-size: 50px;
+    margin: 10px;
+    margin-bottom: 0;
+    
+}
+.error .cont-1 h2{
+    font-family: "Ysabeau SC", serif;
+    margin: 20px;
+    margin-top: 10px;
+}
+
+.error .cont-1 h3{
+    color: black;
+}
+
+.error .cont-1 a{
+    text-decoration: none;
+    color: white;
+}
+
+.error .cont-1 button{
+    width: 70%;
+    height: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: darkblue;
+    color: white;
+    border: none;
+    font-size: 25px;
+}
+
+
+
+@media screen and (max-width:850px) {
+    .header .left h1{
+        padding-top: 10px;
+    }
+    .header .right{
+        display: none;
+    }
+    .header .bar{
+        display: block;
+    }
+    .home .content-1{
+        height: 800px;
+    }
+    .home .content-1 .box .top button{
+        font-size: 12px;
+    }
+    .home .content-1 .box .top h3{
+        display: none;
+    }
+    .home .content-1 .box .mid{
+        display: block;
+    }
+    .home .content-1 .box .mid input{
+        width: 90%;
+    }
+    .home .content-1 .box .mid button{
+        display: none;
+    }
+    .home .content-1 .box .bottom{
+        display: block;
+        text-align: center;
+    }
+
+    .home .content-2 .box-1 .cards{
+        display: block;
+    }
+    .home .content-2 .box-1 .cards .card{
+        margin-top: 20px;
+    }
+    .home .content-2 .box-2{
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .home .content-2 .box-2 .info{
+        height: fit-content;
+        min-height: 250px;
+         flex-basis: 60%;
+    }
+    .login .cont-1{
+        width: 80%;
+    }
+    .cont a{
+        margin: 10px;
+    }
+
+}

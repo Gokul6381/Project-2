@@ -1,0 +1,36 @@
+{% extends "Main.html" %} {% block content %}
+
+<div class="passanger">
+
+      <h1>Passenger Details</h1>
+      <form method="post">
+        <div class="data">
+            <h2>Name</h2>
+            <input type="text" name="name" required/>
+        </div>
+        <div class="data">
+            <h2>Age</h2>
+            <input type="number" name="age" required/>
+        </div>
+        <div class="data">
+            <h2>Gender</h2>
+            <input type="radio" class="gender" name="gender" value="male" /><label
+                >Male</label>
+                <input type="radio" class="gender" name="gender" value="female" /><label
+                >Female</label>
+          </div>
+          <div class="data">
+            <h2>Class</h2>
+            <select name="class" id="class" >
+                <option value="economy">Economy</option>
+                <option value="bussiness">Bussiness</option>
+                <option value="firstClass">First Class</option>
+              </select>
+          </div>
+        
+          
+        <button type="submit">Book</button>
+      </form>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "Main.html" %} {% block content %}
+
+<div class="available">
+    <div class="search">
+      <h1>Enter Where To Go</h1>
+      <input type="text" name="name" id="searchInput" />
+      <button type="submit" onclick="filterFlights()">Search</button>
+    </div>
+
+    <div class="list">
+      <table id="flightTable">
+        <tr>
+          <td><h3>Flight Id</h3></td>
+          <td><h3>Flight Name</h3></td>
+          <td><h3>Origin</h3></td>
+          <td><h3>Destination</h3></td>
+          <td><h3>Depature</h3></td>
+          <td><h3>Book</h3></td>
+        </tr>
+        {% for i in range(0,50) %}
+        <form method="post">
+          <tr>
+            <td>{{data[i][0]}}</td>
+            <td>{{data[i][1]}}</td>
+            <td>{{data[i][2]}}</td>
+            <td>{{data[i][3]}}</td>
+            <td>{{data[i][4]}}</td>
+            <td>
+              <input
+                type="hidden"
+                value="{{data[i][0]}}"
+                name="flight_id"
+              /><button type="submit" id="pass">Book</button>
+            </td>
+          </tr>
+        </form>
+        {% endfor %}
+      </table>
+    </div>
+  
+</div>
+
+{% endblock %}

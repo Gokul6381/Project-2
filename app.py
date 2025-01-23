@@ -6,11 +6,12 @@ from datetime import datetime
 
 app=Flask(__name__)
 app.secret_key= os.urandom(24)
+app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 @app.route('/',methods=['GET','POST'])
 def index():
     try:
-        return render_template('index.html')
+        return render_template('Home.html')
     except Exception as err:
         print(str(err))
         return redirect('/error')
@@ -31,7 +32,6 @@ def register():
                 "password":request.form.get('userPass'),
                 "reg_date":str(datetime.now())
             }
-            
             try:
                 query=f"insert into users(user_id,password,name,phone,email) values('{form['user']}','{form['password']}','{form['name']}','{form['phone']}','{form['email']}');"
                 insert(query=query)
@@ -41,7 +41,7 @@ def register():
                 print(str(err))
 
             return redirect('/login')
-        return render_template('register.html')
+        return render_template('Register.html')
 
     except Exception as err:
         print(str(err))
@@ -96,7 +96,7 @@ def profile():
         profile=session['users']    
         query=f"select b.booking_id,b.name,b.age,b.gender,b.class,f.* FROM flight_data as f INNER JOIN booking as b on f.flight_id=b.flight_id INNER JOIN users as u ON b.user_id=u.user_id WHERE u.user_id='{session['user']}';"
         history=redrive_all(query=query)
-
+        print(history)
         if history:        
             return render_template('profile.html', profile=profile, history=history)
         else:
@@ -122,7 +122,7 @@ def available():
             session['flight_id']=flight_id
             return redirect('/passenger')
 
-        return render_template('available.html',data=data)
+        return render_template('FlightList.html',data=data)
 
     except Exception as err:
         print(str(err))
@@ -149,12 +149,14 @@ def book():
                 insert(query=query)
                 file=r"Book_data.json"
                 insert_data(form=form,file=file)
+                return redirect('/success')
             except Exception as err:
                 print(str(err))
+                return redirect('/error')
 
-            return redirect('/success')
             
-        return render_template('booking.html')
+            
+        return render_template('Passanger.html')
     except Exception as err:
         print(str(err))
         return redirect('/error')
@@ -177,4 +179,5 @@ def error():
 
 
 if __name__=='__main__':
-    app.run(host='0.0.0.0',port=5000)
+    # app.run(debug=True,host='0.0.0.0',port=5000)
+    app.run(debug=True)
